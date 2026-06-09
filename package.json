@@ -1,0 +1,15 @@
+{
+  "name": "taskflow-pro-root",
+  "version": "1.0.0",
+  "description": "TaskFlow Pro - Premium MERN Task Management SaaS",
+  "scripts": {
+    "install-all": "npm install --prefix backend && npm install --prefix frontend --legacy-peer-deps",
+    "server": "npm run dev --prefix backend",
+    "client": "npm run dev --prefix frontend",
+    "start": "node backend/server.js",
+    "dev": "npx concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
