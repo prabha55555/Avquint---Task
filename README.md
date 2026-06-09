@@ -4,6 +4,8 @@
 
 TaskFlow Pro is a premium, internship-winning MERN Stack Task Management SaaS application. It features a stunning, Stripe/Linear/Apple-inspired glassmorphic dark-mode-ready UI, secure JWT authorization, task sorting/searching/filtering, pagination, and real-time visual analytics built with Recharts.
 
+https://github.com/user-attachments/assets/746ca7f0-a59b-47ca-ae3b-7a84820737a7
+
 ---
 
 ## Folder Structure
