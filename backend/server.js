@@ -18,8 +18,13 @@ const app = express();
 app.use(helmet());
 
 // Enable CORS with dynamic frontend origin
+let frontendUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
+if (frontendUrl.endsWith('/')) {
+  frontendUrl = frontendUrl.slice(0, -1);
+}
+
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: frontendUrl,
   credentials: true,
   optionsSuccessStatus: 200,
 };
